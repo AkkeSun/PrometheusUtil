@@ -1,4 +1,0 @@
-2025-01-03 15:45:02  INFO [app=PrometheusUtil] - HV000001: Hibernate Validator 8.0.1.Final
-2025-01-03 15:45:02  INFO [app=PrometheusUtil] - Starting PrometheusUtilApplicationTests using Java 17.0.11 with PID 25010 (started by lowlow in /Users/lowlow/IdeaProjects/PrometheusUtil)
-2025-01-03 15:45:02  INFO [app=PrometheusUtil] - No active profile set, falling back to 1 default profile: "default"
-2025-01-03 15:45:02  INFO [app=PrometheusUtil] - Started PrometheusUtilApplicationTests in 0.767 seconds (process running for 1.294)
