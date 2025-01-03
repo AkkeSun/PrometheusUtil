@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: PrometheusUtil
+
+server:
+  port: 8158
+
+prometheus:
+  url: http://192.168.103.170:9090
