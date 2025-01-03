@@ -1,5 +1,7 @@
 package com.prometheusutil.metrics.application.service.find_metrics;
 
+import com.prometheusutil.global.exception.CustomNotFoundException;
+import com.prometheusutil.global.exception.ErrorCode;
 import com.prometheusutil.metrics.adapter.out.external.dto.ApiCallCntResponse;
 import com.prometheusutil.metrics.application.port.in.FindMetricsUseCase;
 import com.prometheusutil.metrics.application.port.in.command.FindMetricsCommand;
@@ -33,7 +35,7 @@ class FindMetricsService implements FindMetricsUseCase {
             .findInstanceList(command.job(), startTime, endTime);
 
         if (instanceList.isEmpty()) {
-            throw new RuntimeException("No instance found");
+            throw new CustomNotFoundException(ErrorCode.DoesNotExist_INSTANCE);
         }
 
         List<InstanceMetric> instanceMetrics = new ArrayList<>();
